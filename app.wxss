@@ -1,0 +1,52 @@
+/**app.wxss**/
+
+page {
+  width: 100%;
+  height: 100%;
+  background: #f9f9f9;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  position: relative;
+}
+
+/* 隐藏滚动条 */
+
+::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+  color: transparent;
+}
+
+image {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: auto;
+}
+
+button {
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 32rpx;
+  border: none;
+}
+
+button[type="primary"] {
+  width: 590rpx;
+  background-image: linear-gradient(204deg, #0c7ffe 0%, #0063ff 100%);
+  box-shadow: 0 4rpx 8rpx 0 rgba(0, 120, 187, 0.20);
+  border-radius: 41rpx;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+button::after {
+  border: none;
+}
+
+button[type="primary"][disabled] {
+  background: #b8d6ff;
+}
